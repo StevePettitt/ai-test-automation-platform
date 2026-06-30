@@ -1,18 +1,21 @@
+import 'dotenv/config';
 import { Page } from '@playwright/test';
 import { HomePage } from '../POM/HomePage';
 import { ProductPage } from '../POM/ProductPage';
 import { CartPage } from '../POM/CartPage';
 
 // ── Config ─────────────────────────────────────────────────────────────────────
+// Values are read from .env (see .env.example for the full list).
+// Fallbacks are provided so tests still run if a key is missing.
 
-export const BASE_URL          = 'https://www.demoblaze.com/';
-export const DEFAULT_PASSWORD  = 'password';
-export const PURCHASE_NAME     = 'Test User';
-export const PURCHASE_COUNTRY  = 'UK';
-export const PURCHASE_CITY     = 'London';
-export const PURCHASE_CARD     = '1234567890123456';
-export const PURCHASE_MONTH    = '12';
-export const PURCHASE_YEAR     = '2026';
+export const BASE_URL          = process.env.BASE_URL          || 'https://www.demoblaze.com/';
+export const DEFAULT_PASSWORD  = process.env.DEFAULT_PASSWORD  || 'password';
+export const PURCHASE_NAME     = process.env.PURCHASE_NAME     || 'Test User';
+export const PURCHASE_COUNTRY  = process.env.PURCHASE_COUNTRY  || 'UK';
+export const PURCHASE_CITY     = process.env.PURCHASE_CITY     || 'London';
+export const PURCHASE_CARD     = process.env.PURCHASE_CARD     || '1234567890123456';
+export const PURCHASE_MONTH    = process.env.PURCHASE_MONTH    || '12';
+export const PURCHASE_YEAR     = process.env.PURCHASE_YEAR     || '2026';
 
 // ── Functions ──────────────────────────────────────────────────────────────────
 
