@@ -27,6 +27,11 @@ __pycache__/
 Thumbs.db
 desktop.ini
 
+# Environment / credentials — never commit these
+.env
+.env.local
+.env.*.local
+
 # Editor
 .vscode/
 .idea/

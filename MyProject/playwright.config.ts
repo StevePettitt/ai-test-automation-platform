@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -5,7 +6,7 @@ export default defineConfig({
   use: {
     headless: false,
     slowMo: 300,
-    baseURL: 'https://www.demoblaze.com/',
+    baseURL: process.env.BASE_URL || 'https://www.demoblaze.com/',
   },
   reporter: [
     ['html', { outputFolder: 'Results/html-report', open: 'never' }],
