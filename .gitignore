@@ -1,0 +1,33 @@
+# Node / Playwright
+node_modules/
+MyProject/node_modules/
+test-results/
+MyProject/test-results/
+playwright-report/
+MyProject/playwright-report/
+
+# Generated HTML reports (run artifacts)
+Results/
+MyProject/Results/
+
+# Scraped HTML pages (regenerate with the scraper)
+MyProject/HTML/
+
+# Chrome browser profile (contains personal login state)
+MyProject/Profile/
+Profile/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
