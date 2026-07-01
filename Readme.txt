@@ -22,6 +22,7 @@ STEP 2 - TEST DESIGN
     ask Claude to turn these into a tests.md and save these in a folder called Design
 
 STEP 3 - AI BUILD
+	*** maybe just check that Claude can find the skills? ***
 	everything = Build the automation for [myproject]
 	one at a time = rebuild Page Object Model; rebuild functions; rebuild framework; rebuild tests
 
